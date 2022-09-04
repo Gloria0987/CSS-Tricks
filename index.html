@@ -56,6 +56,12 @@
         into the form control after submitting-->
         <!-- form input shouls always have a name attribute otherwise it will be ignored when the form is submitted-->
         <input type="text" name="first_name" id="first_name">
+        <fieldset><!--Field set element is a container element that allows us to group related forms together-->
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name">
+        </fieldset>
     </form>
 </body>
 </html>
