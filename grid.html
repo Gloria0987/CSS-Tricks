@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding CSS Grid</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .container{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 200px 400px; /*Explicitly defined what the columns will be*/
+            grid-template-rows: 200px 400px;
+            grid-auto-rows: 100px 300px;
+            grid-auto-columns: 50px;
+        }
+        .container>div{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
